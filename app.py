@@ -75,16 +75,16 @@ if st.sidebar.button("Recommend Me"):
 
 
 # import data
-books = pd.read_csv('Data/Books.csv')  # books data
-users = pd.read_csv('Data/Users.csv') # Users location and age data
-ratings = pd.read_csv('Data/Ratings.csv') # Users rating data
+books_df = pd.read_csv('Data/Books.csv')  # books data
+users_df = pd.read_csv('Data/Users.csv') # Users location and age data
+ratings_df = pd.read_csv('Data/Ratings.csv') # Users rating data
 
 st.sidebar.title("Data Used")
 
 if st.sidebar.button("Show"):
     st.subheader('This is the books data we used in our model')
-    st.dataframe(books)
+    st.dataframe(books_df)
     st.subheader('This is the User ratings data we used in our model')
-    st.dataframe(ratings)
+    st.dataframe(ratings_df)
     st.subheader('This is the user data we used in our model')
-    st.dataframe(users)
+    st.dataframe(users_df)
