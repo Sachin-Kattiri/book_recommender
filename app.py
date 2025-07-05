@@ -9,7 +9,7 @@ st.set_page_config(layout="wide")
 st.header("Book Recommender System")
 
 st.markdown('''
-            ##### The site usinging colaborative filtering suggests books from our catalog. 
+            ##### The site using Collaborative Filtering suggests books from our catalog. 
             ##### We recommend top 50 books for every one as well. 
             ''')
 
